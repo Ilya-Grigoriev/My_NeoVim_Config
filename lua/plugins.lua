@@ -73,4 +73,7 @@ return require('packer').startup(function(use)
         end
     })
 
+    -- RipGrep
+    use "duane9/nvim-rg"
+
 end)
