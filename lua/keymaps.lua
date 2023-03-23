@@ -14,4 +14,4 @@ vim.api.nvim_set_keymap('n', '<S-k>', '<cmd> lua vim.lsp.buf.hover()<CR>',
 vim.api.nvim_set_keymap('n', '<leader>rf', ':call delete(expand(""))', {})
 vim.api.nvim_set_keymap('n', '<leader>ps', ':py3file %<CR>', {})
 vim.api.nvim_set_keymap('n', '<leader>tn', ':tabnew<CR>', {})
-
+vim.api.nvim_set_keymap('n', '<leader>rg', ':Rg ', {})
