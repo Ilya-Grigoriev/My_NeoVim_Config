@@ -76,4 +76,7 @@ return require('packer').startup(function(use)
     -- RipGrep
     use "duane9/nvim-rg"
 
+    -- WebDevIcons
+    use 'nvim-tree/nvim-web-devicons'
+
 end)
