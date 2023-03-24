@@ -65,15 +65,15 @@ return require('packer').startup(function(use)
     -- Python Docstring
     use {'pixelneo/vim-python-docstring'}
 
-    -- Surround text
-    use({
-        "kylechui/nvim-surround",
-        tag = "*",
-        config = function()
-            require("nvim-surround").setup({
-            })
-        end
-    })
+    -- -- Surround text
+    -- use({
+    --     "kylechui/nvim-surround",
+    --     tag = "*",
+    --     config = function()
+    --         require("nvim-surround").setup({
+    --         })
+    --     end
+    -- })
 
     -- RipGrep
     use "duane9/nvim-rg"
