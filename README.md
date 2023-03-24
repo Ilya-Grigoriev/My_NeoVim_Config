@@ -1,5 +1,5 @@
 # Config
-### This is my NeoVim config, which I will update frequently.
+### This is my NeoVim config, which I will update sometimes.
 # Installation
 1) Cloning this repo to the root folder of the computer:
 ```bash
