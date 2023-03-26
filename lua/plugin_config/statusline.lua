@@ -108,12 +108,13 @@ local function lineinfo()
 end
 
 local vcs = function()
-  local signs = vim.b.gitsigns_status_dict or {head = 'branch', added = 0, 
-  changed = 0, removed = 0}
+  local handle = io.popen("git rev-parse --abbrev-ref HEAD")
+  local branch_name = string.sub(handle:read('a'), 1, -2)
+  handle:close()
   return table.concat {
      " ",
      "%#GitSignsAdd# ",
-     signs.head,
+     branch_name,
      " %#Normal#",
   }
 end
