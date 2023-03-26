@@ -10,5 +10,6 @@ require("plugin_config/lsp")
 require("plugin_config/git")
 require('plugin_config/webdevicons')
 require('plugin_config/surround_text')
+require('plugin_config/terminal')
 
 vim.cmd [[ colorscheme gruvbox ]]
