@@ -81,4 +81,9 @@ return require('packer').startup(function(use)
     -- WebDevIcons
     use 'nvim-tree/nvim-web-devicons'
 
+    -- Terminal
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+    end}
+
 end)
