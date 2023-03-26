@@ -113,7 +113,7 @@ local vcs = function()
   handle:close()
   return table.concat {
      " ",
-     "%#GitSignsAdd# ",
+     " ",
      branch_name,
      " %#Normal#",
   }
