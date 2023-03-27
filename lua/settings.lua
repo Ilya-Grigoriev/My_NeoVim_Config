@@ -10,3 +10,4 @@ o.softtabstop = 4
 o.textwidth = 79
 o.autoindent = true
 o.expandtab = true
+o.cursorline = true
