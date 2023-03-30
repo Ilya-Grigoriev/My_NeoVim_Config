@@ -1,9 +1,7 @@
 vim.g.nvim_tree_auto_open = 1
 vim.g.nvim_tree_width = 25
-vim.g.nvim_tree_gitignore = 1
 vim.g.nvim_tree_auto_close = 1
 vim.g.nvim_tree_indent_markers = 1
--- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
