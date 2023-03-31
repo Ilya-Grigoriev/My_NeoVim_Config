@@ -2,6 +2,7 @@ require("mason").setup()
 require("mason-lspconfig").setup()
 
 vim.o.completeopt = 'menuone,noselect'
+vim.cmd[[lua vim.diagnostic.disable(0)]]
 
 local luasnip = require 'luasnip'
 local async = require "plenary.async"
@@ -148,3 +149,9 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    virtual_text = false,
+  }
+)
