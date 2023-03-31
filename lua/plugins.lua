@@ -87,5 +87,10 @@ return require('packer').startup(function(use)
     end}
 
     -- Git
-    use {"f-person/git-blame.nvim"}
+    use {
+      'lewis6991/gitsigns.nvim',
+      config = function()
+        require('gitsigns').setup()
+      end
+    }
 end)
