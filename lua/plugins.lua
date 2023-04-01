@@ -93,4 +93,7 @@ return require('packer').startup(function(use)
         require('gitsigns').setup()
       end
     }
+
+    -- Multi Cursor
+    use {'mg979/vim-visual-multi'}
 end)
