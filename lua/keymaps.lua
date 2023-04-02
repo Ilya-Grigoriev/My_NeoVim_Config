@@ -1,7 +1,7 @@
 vim.g.mapleader = ","
 vim.cmd [[set colorcolumn=79]]
-vim.api.nvim_set_keymap('n', 'x', '"xx', {noremap = true})
-vim.api.nvim_set_keymap('n', 'dd', '"ddd', {noremap = true})
+-- vim.api.nvim_set_keymap('n', 'x', '"xx', {noremap = true})
+-- vim.api.nvim_set_keymap('n', 'dd', '"ddd', {noremap = true})
 vim.api.nvim_set_keymap('n', ',<Space>', ':nohlsearch<CR>', {})
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', {})
 vim.api.nvim_set_keymap('n', '<C-/>', ':NERDCommenterToggle<CR>', {})
