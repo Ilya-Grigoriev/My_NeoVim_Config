@@ -13,5 +13,6 @@ require('plugin_config/surround_text')
 require('plugin_config/terminal')
 require('plugin_config/python_docstring')
 require('plugin_config/multicursor')
+require('plugin_config/gitsigns')
 
 vim.cmd [[ colorscheme gruvbox ]]
