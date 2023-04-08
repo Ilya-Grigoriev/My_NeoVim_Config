@@ -26,10 +26,10 @@ return require('packer').startup(function(use)
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-nvim-lsp',
     'saadparwaiz1/cmp_luasnip',
-    'L3MON4D3/LuaSnip',
     'ray-x/lsp_signature.nvim',
     "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim"
+    "williamboman/mason-lspconfig.nvim",
+    'L3MON4D3/LuaSnip'
 }
   
   -- NeoVim Tree
@@ -96,4 +96,8 @@ return require('packer').startup(function(use)
 
     -- Multi Cursor
     use {'mg979/vim-visual-multi'}
+
+    -- Snippets
+    use {'hrsh7th/cmp-nvim-lsp',
+    'rafamadriz/friendly-snippets'}
 end)
