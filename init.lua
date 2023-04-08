@@ -1,7 +1,7 @@
 require("settings")
 require("plugins")
 require('keymaps')
-require("telescope/settings")
+require("plugin_config/telescope")
 require("plugin_config/neovimtree")
 require("plugin_config/tagbar")
 require("plugin_config/commenter")
