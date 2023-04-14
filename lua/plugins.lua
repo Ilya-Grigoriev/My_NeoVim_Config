@@ -91,6 +91,7 @@ return require('packer').startup(function(use)
             require('gitsigns').setup()
         end
     }
+    use {'kdheepak/lazygit.nvim'}
 
     -- Multi Cursor
     use {'mg979/vim-visual-multi'}
