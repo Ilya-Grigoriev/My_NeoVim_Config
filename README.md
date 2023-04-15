@@ -18,3 +18,5 @@ cd MyNeoVimConfig
 ```
 5) Restart NeoVim.
 6) All done!
+# Keybindings
+[List of keybindings][https://github.com/Ilya-Grigoriev/MyNeoVimConfig/wiki/Keybindings]
