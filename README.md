@@ -9,9 +9,10 @@ cd MyNeoVimConfig
 2) You should have installed the following components:
 	- ctags (on Windows may install with Chocolately);
 	- pyright (install with npm);
-	- rust-analyzer (install with npm).
-3) Launch NeoVim (just enter "nvim" in console).
-4) In NeoVim, start installing the required plugins with by entering the following command:
+	- rust-analyzer (install with npm);
+	- lazygit (on Windows may install with Chocolately).
+1) Launch NeoVim (just enter "nvim" in console).
+2) In NeoVim, start installing the required plugins with by entering the following command:
 ```vim
 :PackerSync
 ```
