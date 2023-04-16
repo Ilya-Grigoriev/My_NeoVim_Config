@@ -15,5 +15,6 @@ require('plugin_config/python_docstring')
 require('plugin_config/multicursor')
 require('plugin_config/gitsigns')
 require('plugin_config/snippets')
+require('plugin_config/harpoon')
 
 vim.cmd [[ colorscheme gruvbox ]]
