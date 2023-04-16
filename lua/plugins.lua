@@ -102,4 +102,7 @@ return require('packer').startup(function(use)
         'saadparwaiz1/cmp_luasnip',
         'L3MON4D3/LuaSnip'
     }
+
+    -- Harpoon
+    use {'ThePrimeagen/harpoon'}
 end)
