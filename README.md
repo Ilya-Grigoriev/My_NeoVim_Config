@@ -20,3 +20,5 @@ cd MyNeoVimConfig
 6) All done!
 # Keybindings
 [List of keybindings](https://github.com/Ilya-Grigoriev/MyNeoVimConfig/wiki/Keybindings)
+# Recommendations
+[List of recommendations](https://github.com/Ilya-Grigoriev/MyNeoVimConfig/wiki/Recommendations)
