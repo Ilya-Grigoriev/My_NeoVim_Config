@@ -51,6 +51,9 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
   },
+  window = {
+    documentation = cmp.config.window.bordered(),
+  },
 }
 local nvim_lsp = require('lspconfig')
 
