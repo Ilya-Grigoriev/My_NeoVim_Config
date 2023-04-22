@@ -11,3 +11,4 @@ o.textwidth = 79
 o.autoindent = true
 o.expandtab = true
 o.cursorline = true
+o.scrolloff = 5
