@@ -1,6 +1,6 @@
 local g = vim.g
 
-g.ale_linters = {python= {'ruff', 'flake8', 'pylint', 'pydocstring', 'pyright'}}
+g.ale_linters = {python= {'ruff', 'pyright'}}
 g.ale_fixers = {python= {'black', 'isort'}}
 g.ale_fix_on_save = 1
 -- Запуск линтера, только при сохранении
