@@ -33,9 +33,6 @@ return require('packer').startup(function(use)
     -- NeoVim Tree
     use {"nvim-tree/nvim-tree.lua"}
 
-    -- TagBar
-    use {'preservim/tagbar'}
-
     -- Themes
     use {'morhetz/gruvbox'}
     -- Commenter
