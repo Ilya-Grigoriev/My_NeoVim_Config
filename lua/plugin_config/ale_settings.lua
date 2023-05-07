@@ -16,4 +16,4 @@ highlight clear ALEWarningSign
 g.ale_sign_error = ''
 g.ale_sign_warning = ''
 g.ale_linters_explicit = 1
-vim.keymap.set('n', '<S-f>', ':ALEFix black isort<CR>', {})
+vim.keymap.set('n', '<S-f>', ':ALEFix<CR>', {})
