@@ -7,6 +7,8 @@ vim.api.nvim_set_keymap('n', ',gl', ':!git log<CR>', {})
 vim.api.nvim_set_keymap('n', ',gp', ':!git push<CR>', {})
 vim.api.nvim_set_keymap('n', ',gb', ':!git branch<CR>', {})
 vim.api.nvim_set_keymap('n', ',gm', ':!git merge ', {})
+
+-- LazyGit
 local Terminal  = require('toggleterm.terminal').Terminal
 local lazygit = Terminal:new({
   cmd = "lazygit",
