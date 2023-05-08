@@ -7,54 +7,6 @@ vim.cmd[[lua vim.diagnostic.disable(0)]]
 local luasnip = require 'luasnip'
 local async = require "plenary.async"
 
-local cmp = require 'cmp'
-cmp.setup {
-    completion = {
-        autocomplete = false
-    },
-  snippet = {
-    expand = function(args)
-      require('luasnip').lsp_expand(args.body)
-    end,
-  },
-  mapping = {
-    ['<C-p>'] = cmp.mapping.select_prev_item(),
-    ['<C-n>'] = cmp.mapping.select_next_item(),
-    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-f>'] = cmp.mapping.scroll_docs(4),
-    ['<C-y>'] = cmp.mapping.complete(),
-    ['<C-e>'] = cmp.mapping.close(),
-    ['<CR>'] = cmp.mapping.confirm {
-      behavior = cmp.ConfirmBehavior.Replace,
-      select = true,
-    },
-    ['<Tab>'] = function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
-      else
-        fallback()
-      end
-    end,
-    ['<S-Tab>'] = function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif luasnip.jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end,
-  },
-  sources = {
-    { name = 'nvim_lsp' },
-    { name = 'luasnip' },
-  },
-  window = {
-    documentation = cmp.config.window.bordered(),
-  },
-}
 local nvim_lsp = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
@@ -89,6 +41,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
+  -- LSP Signature
    cfg = {
       debug = false, 
       log_path = vim.fn.stdpath("cache") .. "/lsp_signature.log", 
@@ -105,6 +58,7 @@ local on_attach = function(client, bufnr)
       close_timeout = 4000,
       fix_pos = false,
       hint_enable = true,
+      hint_prefix = "--> ",
       hint_scheme = "String",
       hi_parameter = "LspSignatureActiveParameter", 
       handler_opts = {
