@@ -46,9 +46,6 @@ return require('packer').startup(function(use)
     -- Snippets
     use {'sirver/ultisnips'}
 
-    -- Engine
-    use {'dense-analysis/ale'}
-
     -- Python Docstring
     use {'pixelneo/vim-python-docstring'}
 
