@@ -1,5 +1,7 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
+local util = require 'lspconfig.util'
+
 -- Config for LSP lua-language-server
 lspconfig.lua_ls.setup {
     on_attach = function()
@@ -27,15 +29,13 @@ lspconfig.lua_ls.setup {
 }
 
 -- Config for LSP pyright
-local util = require 'lspconfig.util'
-
 local root_files = {
-  'pyproject.toml',
-  'setup.py',
-  'setup.cfg',
-  'requirements.txt',
-  'Pipfile',
-  'pyrightconfig.json',
+    'pyproject.toml',
+    'setup.py',
+    'setup.cfg',
+    'requirements.txt',
+    'Pipfile',
+    'pyrightconfig.json',
 }
 
 local function organize_imports()
