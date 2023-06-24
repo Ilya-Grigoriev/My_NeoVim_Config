@@ -1,5 +1,6 @@
 .idea
 .gitconfig
 .obsidian
-.git
+.git/
 plugin/
+.mypy_cache/
