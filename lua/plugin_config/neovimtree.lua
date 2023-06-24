@@ -13,10 +13,10 @@ require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  renderer = {
-    group_empty = true,
-  }
+    sort_by = "case_sensitive",
+    renderer = {
+        group_empty = true,
+    }
 })
 
 vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', {})

@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         -- or                            , branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
     -- JS/JSX/TS
@@ -31,10 +31,10 @@ return require('packer').startup(function(use)
     }
 
     -- NeoVim Tree
-    use {"nvim-tree/nvim-tree.lua"}
+    use { "nvim-tree/nvim-tree.lua" }
 
     -- Themes
-    use {'morhetz/gruvbox'}
+    use { 'morhetz/gruvbox' }
     -- Commenter
     use {
         'numToStr/Comment.nvim',
@@ -44,10 +44,10 @@ return require('packer').startup(function(use)
     }
 
     -- Snippets
-    use {'sirver/ultisnips'}
+    use { 'sirver/ultisnips' }
 
     -- Python Docstring
-    use {'pixelneo/vim-python-docstring'}
+    use { 'pixelneo/vim-python-docstring' }
 
     -- -- Surround text
     -- use({
@@ -66,9 +66,9 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
 
     -- Terminal
-    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    use { "akinsho/toggleterm.nvim", tag = '*', config = function()
         require("toggleterm").setup()
-    end}
+    end }
 
     -- Git
     use {
@@ -77,10 +77,10 @@ return require('packer').startup(function(use)
             require('gitsigns').setup()
         end
     }
-    use {'kdheepak/lazygit.nvim'}
+    use { 'kdheepak/lazygit.nvim' }
 
     -- Multi Cursor
-    use {'mg979/vim-visual-multi'}
+    use { 'mg979/vim-visual-multi' }
 
     -- Snippets
     use {
@@ -90,5 +90,5 @@ return require('packer').startup(function(use)
     }
 
     -- Harpoon
-    use {'ThePrimeagen/harpoon'}
+    use { 'ThePrimeagen/harpoon' }
 end)
