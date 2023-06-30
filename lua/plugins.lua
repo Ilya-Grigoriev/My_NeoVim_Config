@@ -7,17 +7,16 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-    --Telescope
+    -- Telescope
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         -- or                            , branch = '0.1.x',
-        requires = { { 'nvim-lua/plenary.nvim' } }
+        requires = { { 'nvim-lua/plenary.nvim', 'sharkdp/fd' } }
     }
 
     -- JS/JSX/TS
     use {
         'jose-elias-alvarez/null-ls.nvim',
-        'nvim-lua/plenary.nvim'
     }
 
     -- LSP
@@ -35,6 +34,7 @@ return require('packer').startup(function(use)
 
     -- Themes
     use { 'morhetz/gruvbox' }
+
     -- Commenter
     use {
         'numToStr/Comment.nvim',
@@ -60,7 +60,7 @@ return require('packer').startup(function(use)
     -- })
 
     -- RipGrep
-    use "duane9/nvim-rg"
+    use "BurntSushi/ripgrep"
 
     -- WebDevIcons
     use 'nvim-tree/nvim-web-devicons'
