@@ -91,4 +91,13 @@ return require('packer').startup(function(use)
 
     -- Harpoon
     use { 'ThePrimeagen/harpoon' }
+
+    -- Treesitter
+    use { 'nvim-treesitter/nvim-treesitter' }
+
+    -- Fzf
+    use {
+        'junegunn/fzf.vim',
+        requires = { 'junegunn/fzf', run = ':call fzf#install()' }
+    }
 end)
