@@ -9,6 +9,8 @@ local sources = {
         extra_args = { "--line-length=80" }
     }),
     null_ls.builtins.formatting.isort,
+    --- json
+    null_ls.builtins.formatting.fixjson
 }
 
 null_ls.setup({ sources = sources })
