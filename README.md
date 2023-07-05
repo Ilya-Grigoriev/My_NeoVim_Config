@@ -8,9 +8,9 @@ cd MyNeoVimConfig
 ```
 2) You should have installed the following components:
 	- ctags;
-	- pyright;
-	- rust-analyzer;
-	- lazygit;
+	- [pyright](https://github.com/microsoft/pyright);
+	- [rust-analyzer](https://github.com/rust-lang/rust-analyzer);
+	- [lazygit](https://github.com/jesseduffield/lazygit);
     - xclip (on Linux);
     - [packer](https://github.com/wbthomason/packer.nvim).
 1) Launch NeoVim (just enter "nvim" in console).
