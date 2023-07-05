@@ -3,8 +3,8 @@
 # Installation
 1) Cloning this repo to the root folder of the computer:
 ```bash
-git clone https://github.com/Ilya-Grigoriev/MyNeoVimConfig
-cd MyNeoVimConfig
+git clone https://github.com/Ilya-Grigoriev/nvim
+cd nvim
 ```
 2) You should have installed the following components:
 	- ctags;
@@ -21,6 +21,6 @@ cd MyNeoVimConfig
 5) Restart NeoVim.
 6) All done!
 # Keybindings
-[List of keybindings](https://github.com/Ilya-Grigoriev/MyNeoVimConfig/wiki/Keybindings)
+[List of keybindings](https://github.com/Ilya-Grigoriev/nvim/wiki/Keybindings)
 # Recommendations
-[List of recommendations](https://github.com/Ilya-Grigoriev/MyNeoVimConfig/wiki/Recommendations)
+[List of recommendations](https://github.com/Ilya-Grigoriev/nvim/wiki/Recommendations)
