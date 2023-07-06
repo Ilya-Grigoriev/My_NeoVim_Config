@@ -12,7 +12,8 @@ cd nvim
 	- [rust-analyzer](https://github.com/rust-lang/rust-analyzer);
 	- [lazygit](https://github.com/jesseduffield/lazygit);
     - xclip (on Linux);
-    - [packer](https://github.com/wbthomason/packer.nvim).
+    - [packer](https://github.com/wbthomason/packer.nvim);
+    - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts).
 1) Launch NeoVim (just enter "nvim" in console).
 2) In NeoVim, start installing the required plugins with by entering the following command:
 ```vim
