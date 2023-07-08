@@ -100,4 +100,7 @@ return require('packer').startup(function(use)
         'junegunn/fzf.vim',
         requires = { 'junegunn/fzf', run = ':call fzf#install()' }
     }
+
+    -- Lightbulb
+    use { 'kosayoda/nvim-lightbulb' }
 end)
