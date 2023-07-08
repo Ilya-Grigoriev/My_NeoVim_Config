@@ -20,5 +20,6 @@ require("plugin_config/gitsigns")
 require("plugin_config/snippets")
 require("plugin_config/harpoon")
 require("plugin_config/_treesitter")
+require("plugin_config/lightbulb")
 
 vim.cmd [[ colorscheme gruvbox ]]
