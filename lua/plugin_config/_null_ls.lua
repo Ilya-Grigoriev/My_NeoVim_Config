@@ -9,8 +9,13 @@ local sources = {
         extra_args = { "--line-length=80" }
     }),
     null_ls.builtins.formatting.isort,
-    --- json
-    null_ls.builtins.formatting.fixjson
-}
+    -- json
+    null_ls.builtins.formatting.fixjson,
+    -- other languages
+    null_ls.builtins.formatting.prettier.with({
+        filetypes = {
+            "javascript", "typescript", "css", "scss", "html", "json", "yaml", "markdown", "graphql", "md", "txt",
+        },
+    }), }
 
 null_ls.setup({ sources = sources })
