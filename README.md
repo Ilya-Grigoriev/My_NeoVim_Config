@@ -7,7 +7,8 @@ git clone https://github.com/Ilya-Grigoriev/nvim
 cd nvim
 ```
 2) You should have installed the following components:
-	- ctags;
+    - [neovim](https://github.com/neovim/neovim);
+	- [ctags](https://github.com/universal-ctags/ctags);
 	- [pyright](https://github.com/microsoft/pyright);
 	- [rust-analyzer](https://github.com/rust-lang/rust-analyzer);
 	- [lazygit](https://github.com/jesseduffield/lazygit);
