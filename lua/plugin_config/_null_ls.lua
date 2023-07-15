@@ -16,6 +16,9 @@ local sources = {
         filetypes = {
             "javascript", "typescript", "css", "scss", "html", "json", "yaml", "markdown", "graphql", "md", "txt",
         },
-    }), }
+    }),
+    -- java
+    null_ls.builtins.formatting.google_java_format,
+}
 
 null_ls.setup({ sources = sources })
