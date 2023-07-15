@@ -4,3 +4,4 @@
 .git/
 plugin/
 .mypy_cache/
+*.py
