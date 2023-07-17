@@ -14,7 +14,8 @@ cd nvim
 	- [lazygit](https://github.com/jesseduffield/lazygit);
     - [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (on Linux);
     - [packer](https://github.com/wbthomason/packer.nvim);
-    - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts).
+    - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts);
+    - [ripgrep](https://github.com/BurntSushi/ripgrep).
 1) Launch NeoVim (just enter "nvim" in console).
 2) In NeoVim, start installing the required plugins with by entering the following command:
 ```vim
