@@ -21,5 +21,6 @@ require("plugin_config/snippets")
 require("plugin_config/harpoon")
 require("plugin_config/_treesitter")
 require("plugin_config/lightbulb")
+require('plugin_config/statusline')
 
 vim.cmd [[ colorscheme gruvbox ]]
