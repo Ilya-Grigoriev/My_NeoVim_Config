@@ -1,26 +1,34 @@
-require("settings")
+-- core
+require("core/settings")
+require("core/keymaps")
+require('core/statusline')
+
 require("plugins")
-require("keymaps")
-require("plugin_config/telescope")
-require("plugin_config/neovimtree")
-require("plugin_config/commenter")
-require("plugin_config/lsp")
-require("plugin_config/_mason")
-require("plugin_config/_lsp_signature")
-require("plugin_config/_null_ls")
-require("plugin_config/lsp_servers")
-require("plugin_config/cmp")
-require("plugin_config/git")
-require("plugin_config/webdevicons")
-require("plugin_config/surround_text")
-require("plugin_config/terminal")
-require("plugin_config/python_docstring")
-require("plugin_config/multicursor")
-require("plugin_config/gitsigns")
-require("plugin_config/snippets")
-require("plugin_config/harpoon")
-require("plugin_config/_treesitter")
-require("plugin_config/lightbulb")
-require('plugin_config/statusline')
+
+-- lsp
+require("lsp/_lsp_signature")
+require("lsp/_mason")
+require("lsp/_null_ls")
+require("lsp/cmp")
+require("lsp/lsp")
+require("lsp/lsp_servers")
+
+-- plugin configs
+require("plugin_configs/telescope")
+require("plugin_configs/neovimtree")
+require("plugin_configs/commenter")
+require("plugin_configs/git")
+require("plugin_configs/webdevicons")
+require("plugin_configs/terminal")
+require("plugin_configs/python_docstring")
+require("plugin_configs/multicursor")
+require("plugin_configs/gitsigns")
+require("plugin_configs/snippets")
+require("plugin_configs/harpoon")
+require("plugin_configs/_treesitter")
+require("plugin_configs/lightbulb")
+
+-- other modules
+require("other_modules/surround_text")
 
 vim.cmd [[ colorscheme gruvbox ]]
