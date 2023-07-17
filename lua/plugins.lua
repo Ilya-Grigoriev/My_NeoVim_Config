@@ -43,21 +43,8 @@ return require('packer').startup(function(use)
         end
     }
 
-    -- Snippets
-    use { 'sirver/ultisnips' }
-
     -- Python Docstring
     use { 'pixelneo/vim-python-docstring' }
-
-    -- -- Surround text
-    -- use({
-    --     "kylechui/nvim-surround",
-    --     tag = "*",
-    --     config = function()
-    --         require("nvim-surround").setup({
-    --         })
-    --     end
-    -- })
 
     -- RipGrep
     use "BurntSushi/ripgrep"
@@ -86,7 +73,8 @@ return require('packer').startup(function(use)
     use {
         'rafamadriz/friendly-snippets',
         'saadparwaiz1/cmp_luasnip',
-        'L3MON4D3/LuaSnip'
+        'L3MON4D3/LuaSnip',
+        'sirver/ultisnips'
     }
 
     -- Harpoon
