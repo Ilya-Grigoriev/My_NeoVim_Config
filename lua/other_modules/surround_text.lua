@@ -10,13 +10,12 @@ local symbols_pairs = {
     ['#'] = '#',
     ['%'] = '%'
 }
-local template_binding = 'yw%s'
-local template_executing_script = 'c%s<Esc>pa%s<Esc>'
+local template_lhs = 'yw%s'
+local template_rhs = 'c%s<Esc>pa%s<Esc>'
 
-for left_side_pair, right_side_pair in pairs(symbols_pairs) do
-    local binding = string.format(template_binding, left_side_pair)
-    local executing_script = string.format(template_executing_script,
-        left_side_pair, right_side_pair)
+for left_pair, right_pair in pairs(symbols_pairs) do
+    local lhs = string.format(template_lhs, left_pair, right_pair)
+    local rhs = string.format(template_rhs, left_pair, right_pair)
 
-    vim.keymap.set('v', binding, executing_script, { noremap = true })
+    vim.keymap.set('v', lhs, rhs, { noremap = true })
 end
