@@ -5,3 +5,4 @@
 plugin/
 .mypy_cache/
 *.py
+*.json
