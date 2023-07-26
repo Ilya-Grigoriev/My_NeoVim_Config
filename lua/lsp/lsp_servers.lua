@@ -98,3 +98,8 @@ lspconfig.rust_analyzer.setup {
         ['rust-analyzer'] = {},
     },
 }
+
+-- Config for LSP cpp
+require 'lspconfig'.clangd.setup {
+    filetypes = { 'c', 'cpp' }
+}
