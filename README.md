@@ -3,7 +3,7 @@
 # Installation
 1) Cloning this repo to the root folder of the computer:
 ```bash
-git clone https://github.com/Ilya-Grigoriev/nvim
+git clone git@github.com:ilya-grigoriev/nvim.git
 cd nvim
 ```
 2) You should have installed the following components:
@@ -16,8 +16,8 @@ cd nvim
     - [packer](https://github.com/wbthomason/packer.nvim);
     - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts);
     - [ripgrep](https://github.com/BurntSushi/ripgrep).
-1) Launch NeoVim (just enter "nvim" in console).
-2) In NeoVim, start installing the required plugins with by entering the following command:
+3) Launch NeoVim (just enter "nvim" in console).
+4) In NeoVim, start installing the required plugins with by entering the following command:
 ```vim
 :PackerSync
 ```
