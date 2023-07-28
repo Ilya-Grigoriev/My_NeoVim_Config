@@ -17,7 +17,9 @@ cd nvim
     - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts);
     - [ripgrep](https://github.com/BurntSushi/ripgrep);
     - [pynvim](https://github.com/neovim/pynvim) (for using NeoVim with
-      Python).
+      Python);
+    - [jdtls](https://github.com/eclipse/eclipse.jdt.ls) (for using LSP for
+      java).
 3) Launch NeoVim (just enter "nvim" in console).
 4) In NeoVim, start installing the required plugins with by entering the following command:
 ```vim
