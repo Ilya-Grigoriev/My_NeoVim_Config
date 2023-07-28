@@ -91,4 +91,7 @@ return require('packer').startup(function(use)
 
     -- Lightbulb
     use { 'kosayoda/nvim-lightbulb' }
+
+    -- LSP for java
+    use 'mfussenegger/nvim-jdtls'
 end)
