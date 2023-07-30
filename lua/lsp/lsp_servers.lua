@@ -100,6 +100,11 @@ lspconfig.rust_analyzer.setup {
 }
 
 -- Config for LSP cpp
-require 'lspconfig'.clangd.setup {
+lspconfig.clangd.setup {
     filetypes = { 'c', 'cpp' }
+}
+
+-- Config for LSP TOML-files
+lspconfig.taplo.setup {
+    filetypes = { "toml" }
 }
