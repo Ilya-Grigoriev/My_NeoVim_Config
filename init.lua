@@ -1,6 +1,7 @@
 -- core
 require("core/settings")
 require("core/keymaps")
+require("core/statusline")
 
 require("plugins")
 
