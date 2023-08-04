@@ -108,3 +108,8 @@ lspconfig.clangd.setup {
 lspconfig.taplo.setup {
     filetypes = { "toml" }
 }
+
+-- Config for LSP xml-files
+require 'lspconfig'.lemminx.setup {
+    filetypes = { 'xml' }
+}
