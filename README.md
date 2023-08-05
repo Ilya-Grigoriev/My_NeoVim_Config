@@ -34,11 +34,3 @@ cd nvim
 
 5. Restart NeoVim.
 6. All done!
-
-# Keybindings
-
-[Keybindings](https://github.com/Ilya-Grigoriev/nvim/wiki/Keybindings)
-
-# Recommendations
-
-[Recommendations](https://github.com/Ilya-Grigoriev/nvim/wiki/Recommendations)
