@@ -37,8 +37,8 @@ cd nvim
 
 # Keybindings
 
-[List of keybindings](https://github.com/Ilya-Grigoriev/nvim/wiki/Keybindings)
+[Keybindings](https://github.com/Ilya-Grigoriev/nvim/wiki/Keybindings)
 
 # Recommendations
 
-[List of recommendations](https://github.com/Ilya-Grigoriev/nvim/wiki/Recommendations)
+[Recommendations](https://github.com/Ilya-Grigoriev/nvim/wiki/Recommendations)
