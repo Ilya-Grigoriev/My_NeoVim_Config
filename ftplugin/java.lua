@@ -12,9 +12,10 @@ local config = {
         '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
 
         '-jar',
-        '/home/ilya/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.6.500.v20230717-2134.jar',
-        '-configuration', '/home/ilya/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/config_linux',
-        '-data', '/home/ilya/eclipse.jdt.ls'
+        '/home/{your_username}/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.6.500.v20230717-2134.jar',
+        '-configuration',
+        '/home/{your_username}/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/config_linux',
+        '-data', '/home/{your_username}/eclipse.jdt.ls'
     },
 
     root_dir = require('jdtls.setup').find_root({ '.git', 'mvnw', 'gradlew' }),
