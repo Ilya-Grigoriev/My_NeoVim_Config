@@ -2,8 +2,7 @@
 require("core/settings")
 require("core/keymaps")
 require("core/statusline")
-
-require("plugins")
+require("core/plugins")
 
 -- lsp
 require("lsp/_lsp_signature")
