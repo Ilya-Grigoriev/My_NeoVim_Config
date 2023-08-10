@@ -12,7 +12,7 @@ function get_hyper_setup()
 
         set_colors_dashboard(),
 
-        header   = get_header(),
+        header   = get_header_by_theme_name('hyper'),
 
         shortcut = get_hyper_shortcut(),
 
