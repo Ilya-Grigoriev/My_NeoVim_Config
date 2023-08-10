@@ -27,3 +27,7 @@ vim.keymap.set('n', ',ch', ":call histdel(':')<CR>", {})
 vim.keymap.set('n', '<C-Up>', ':m -2<CR>', { noremap = true })
 vim.keymap.set('n', '<C-Down>', ':m +1<CR>', { noremap = true })
 vim.keymap.set('v', '<C-y>', '"+y', { noremap = true })
+
+-- Tabs
+vim.keymap.set('n', 'L', 'gt', { noremap = true })
+vim.keymap.set('n', 'H', 'gT', { noremap = true })
