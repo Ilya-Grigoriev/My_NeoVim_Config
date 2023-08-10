@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim', 'sharkdp/fd' } }
     }
+    use { "smartpde/telescope-recent-files" }
 
     -- JS/JSX/TS
     use {
@@ -94,4 +95,13 @@ return require('packer').startup(function(use)
 
     -- LSP for java
     use 'mfussenegger/nvim-jdtls'
+
+    -- Dashboard
+    use {
+        'glepnir/dashboard-nvim',
+        event = 'VimEnter',
+        config = function()
+            require('dashboard_setup/_dashboard_nvim')
+        end,
+    }
 end)
