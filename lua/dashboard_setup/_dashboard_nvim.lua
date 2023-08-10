@@ -1,7 +1,7 @@
 require('dashboard_setup/setup_components/_setup')
 
 require('dashboard').setup(
-    get_setup_by_theme_name('hyper')
+    get_setup_by_theme_name('doom')
 )
 
 vim.api.nvim_create_autocmd("FileType", {
