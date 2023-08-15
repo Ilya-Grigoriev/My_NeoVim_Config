@@ -24,7 +24,6 @@ require("plugin_configs/multicursor")
 require("plugin_configs/gitsigns")
 require("plugin_configs/snippets")
 require("plugin_configs/harpoon")
-require("plugin_configs/lightbulb")
 require("plugin_configs/_treesitter")
 
 -- other modules
