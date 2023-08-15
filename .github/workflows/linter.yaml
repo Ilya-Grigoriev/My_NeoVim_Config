@@ -3,7 +3,7 @@ name: Linter
 on: [push, pull_request]
 
 jobs:
-  test:
+  run_linter:
     runs-on: ubuntu-latest
 
     steps:
