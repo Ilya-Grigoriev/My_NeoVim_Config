@@ -15,8 +15,6 @@ cd nvim
 2. You should have installed the following components:
    - [neovim](https://github.com/neovim/neovim) **`>= 0.8`**
    - [ctags](https://github.com/universal-ctags/ctags)
-   - [pyright](https://github.com/microsoft/pyright)
-   - [rust-analyzer](https://github.com/rust-lang/rust-analyzer)
    - [lazygit](https://github.com/jesseduffield/lazygit)
    - [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (on Linux)
    - [packer](https://github.com/wbthomason/packer.nvim)
