@@ -15,14 +15,10 @@ return require('packer').startup(function(use)
     }
     use { "smartpde/telescope-recent-files" }
 
-    -- JS/JSX/TS
-    use {
-        'jose-elias-alvarez/null-ls.nvim',
-    }
-
     -- LSP
     use {
         'neovim/nvim-lspconfig',
+        'jose-elias-alvarez/null-ls.nvim',
         'hrsh7th/nvim-cmp',
         'hrsh7th/cmp-nvim-lsp',
         'ray-x/lsp_signature.nvim',
@@ -67,9 +63,6 @@ return require('packer').startup(function(use)
     }
     use { 'kdheepak/lazygit.nvim' }
 
-    -- Multi Cursor
-    use { 'mg979/vim-visual-multi' }
-
     -- Snippets
     use {
         'rafamadriz/friendly-snippets',
@@ -89,9 +82,6 @@ return require('packer').startup(function(use)
         'junegunn/fzf.vim',
         requires = { 'junegunn/fzf', run = ':call fzf#install()' }
     }
-
-    -- Lightbulb
-    use { 'kosayoda/nvim-lightbulb' }
 
     -- LSP for java
     use 'mfussenegger/nvim-jdtls'
