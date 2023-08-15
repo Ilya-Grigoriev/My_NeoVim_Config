@@ -95,13 +95,4 @@ return require('packer').startup(function(use)
 
     -- LSP for java
     use 'mfussenegger/nvim-jdtls'
-
-    -- Dashboard
-    use {
-        'glepnir/dashboard-nvim',
-        event = 'VimEnter',
-        config = function()
-            require('dashboard_setup/_dashboard_nvim')
-        end,
-    }
 end)
