@@ -13,13 +13,12 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim', 'sharkdp/fd' } }
     }
-    use { "smartpde/telescope-recent-files" }
 
     -- LSP
     use {
+        'hrsh7th/nvim-cmp',
         'neovim/nvim-lspconfig',
         'jose-elias-alvarez/null-ls.nvim',
-        'hrsh7th/nvim-cmp',
         'hrsh7th/cmp-nvim-lsp',
         'ray-x/lsp_signature.nvim',
         "williamboman/mason.nvim",
@@ -64,11 +63,10 @@ return require('packer').startup(function(use)
     use { 'kdheepak/lazygit.nvim' }
 
     -- Snippets
+    use { "L3MON4D3/LuaSnip", run = "make install_jsregexp" }
     use {
         'rafamadriz/friendly-snippets',
         'saadparwaiz1/cmp_luasnip',
-        'L3MON4D3/LuaSnip',
-        'sirver/ultisnips'
     }
 
     -- Harpoon
