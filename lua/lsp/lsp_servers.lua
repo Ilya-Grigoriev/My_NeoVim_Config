@@ -3,29 +3,27 @@ local lspconfig = require('lspconfig')
 local util = require 'lspconfig.util'
 
 -- Config for LSP lua-language-server
-lspconfig.lua_ls.setup {
-    on_attach = function()
-        on_attach()
-        vim.cmd [[autocmd BufWritePre <buffer> lua require'stylua-nvim'.format_file()]]
-    end,
-    settings = {
-        Lua = {
-            runtime = {
-                version = 'LuaJIT',
-                path = runtime_path,
-            },
-            diagnostics = {
-                globals = { 'vim' },
-            },
-            workspace = {
-                library = vim.api.nvim_get_runtime_file('', true),
-                checkThirdParty = false, -- THIS IS THE IMPORTANT LINE TO ADD
-            },
-            telemetry = {
-                enable = false,
-            },
-        },
-    },
+require 'lspconfig'.lua_ls.setup {
+    on_init = function(client)
+        local path = client.workspace_folders[1].name
+        if not vim.loop.fs_stat(path .. '/.luarc.json')
+            and not vim.loop.fs_stat(path .. '/.luarc.jsonc') then
+            client.config.settings = vim.tbl_deep_extend('force',
+                client.config.settings.Lua, {
+                    runtime = {
+                        version = 'LuaJIT'
+                    },
+                    workspace = {
+                        library = { vim.env.VIMRUNTIME }
+                    }
+                })
+
+            client.notify("workspace/didChangeConfiguration",
+                { settings = client.config.settings }
+            )
+        end
+        return true
+    end
 }
 
 -- Config for LSP pyright
@@ -52,7 +50,10 @@ local function set_python_path(path)
         name = 'pyright',
     }
     for _, client in ipairs(clients) do
-        client.config.settings = vim.tbl_deep_extend('force', client.config.settings, { python = { pythonPath = path } })
+        client.config.settings = vim.tbl_deep_extend('force',
+            client.config.settings,
+            { python = { pythonPath = path } }
+        )
         client.notify('workspace/didChangeConfiguration', { settings = nil })
     end
 end
