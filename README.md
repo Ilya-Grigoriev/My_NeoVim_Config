@@ -1,3 +1,4 @@
+![Linter](https://github.com/ilya-grigoriev/nvim/actions/workflows/linter.yaml/badge.svg)
 # Config
 
 ### This is my NeoVim config, which I will update sometimes.
