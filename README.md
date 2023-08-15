@@ -1,5 +1,3 @@
-![Preview](https://github.com/ilya-grigoriev/nvim/assets/94981659/5c60c5db-3782-4195-b951-657ad946d4cb)
-
 # Config
 
 ### This is my NeoVim config, which I will update sometimes.
