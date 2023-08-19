@@ -14,6 +14,7 @@ cd nvim
 ```
 
 2. You should have installed the following components:
+
    - [neovim](https://github.com/neovim/neovim) **`>= 0.8`**
    - [ctags](https://github.com/universal-ctags/ctags)
    - [lazygit](https://github.com/jesseduffield/lazygit)
@@ -26,6 +27,8 @@ cd nvim
    - [jdtls](https://github.com/eclipse/eclipse.jdt.ls) (for using LSP for
      java)
    - [pre-commit](https://github.com/pre-commit/pre-commit)
+   - [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/tree/master/cli)
+     (recommend installation via `cargo`)
 
 3. Launch NeoVim (just enter "nvim" in console).
 4. In NeoVim, start installing the required plugins with by entering the following command:
