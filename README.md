@@ -14,7 +14,6 @@ cd nvim
 ```
 
 2. You should have installed the following components:
-
    - [neovim](https://github.com/neovim/neovim) **`>= 0.8`**
    - [ctags](https://github.com/universal-ctags/ctags)
    - [lazygit](https://github.com/jesseduffield/lazygit)
