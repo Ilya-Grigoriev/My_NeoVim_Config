@@ -10,12 +10,27 @@ local cfg = {
     wrap = true,
     floating_window = true,
     floating_window_above_cur_line = true,
-    floating_window_off_x = 1,
-    floating_window_off_y = 0,
+
+    floating_window_off_x = 5,
+    floating_window_off_y = function()
+        local pumheight = vim.o.pumheight
+        local winline = vim.fn.winline()
+        local winheight = vim.fn.winheight(0)
+
+        -- window top
+        if winline - 1 < pumheight then
+            return pumheight
+        end
+
+        -- window bottom
+        if winheight - winline < pumheight then
+            return -pumheight
+        end
+        return 0
+    end,
+
     close_timeout = 4000,
-    fix_pos = false,
     hint_enable = false,
-    hint_prefix = "🐼 ",
     hint_scheme = "String",
     hint_inline = function() return false end,
     hi_parameter = "LspSignatureActiveParameter",
