@@ -12,3 +12,4 @@ o.autoindent = true
 o.expandtab = true
 o.cursorline = true
 o.scrolloff = 5
+vim.cmd [[set colorcolumn=81]]
