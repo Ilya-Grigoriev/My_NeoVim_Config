@@ -4,6 +4,7 @@ vim.g.mapleader = ","
 vim.keymap.set('i', 'jk', '<ESC>', {})
 vim.keymap.set("t", '<C-t>', '<C-\\><C-n>', { noremap = true })
 
+-- Disable searching highlightings
 vim.keymap.set('n', ',<Space>', ':nohlsearch<CR>', {})
 
 -- NerdTree
@@ -17,6 +18,7 @@ vim.keymap.set("n", "<leader>rn",
 vim.keymap.set('n', '<S-k>', '<cmd> lua vim.lsp.buf.hover()<CR>',
     { noremap = true })
 
+-- Delete file
 vim.keymap.set('n', '<leader>rf', ':call delete(expand(""))', {})
 
 -- Run python file
@@ -39,6 +41,7 @@ vim.keymap.set('n', ',bd', ':%bd<CR>', {})
 vim.keymap.set('n', ',bf', ':bd ', {})
 
 
+-- Copy to copyboard
 vim.keymap.set('v', '<C-y>', '"+y', { noremap = true })
 
 -- Move line
@@ -49,5 +52,5 @@ vim.keymap.set('n', '<C-Down>', ':m +1<CR>', { noremap = true })
 vim.keymap.set('n', 'L', 'gt', { noremap = true })
 vim.keymap.set('n', 'H', 'gT', { noremap = true })
 
--- Other
+-- Selected all lines
 vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true })
