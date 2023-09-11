@@ -22,7 +22,7 @@ vim.keymap.set('n', '<S-k>', '<cmd> lua vim.lsp.buf.hover()<CR>',
 vim.keymap.set('n', '<leader>rf', ':call delete(expand(""))', {})
 
 -- Run python file
-vim.keymap.set('n', '<leader>ps', ':py3file %<CR>', {})
+vim.keymap.set('n', '<leader>ps', ':term python3 %<CR>i', {})
 
 -- Tabs
 vim.keymap.set('n', '<leader>tn', ':tabnew<CR>', {})
