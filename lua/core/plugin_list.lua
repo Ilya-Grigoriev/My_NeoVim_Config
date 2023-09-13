@@ -1,7 +1,4 @@
 return {
-    -- Packer can manage itself
-    'wbthomason/packer.nvim',
-
     -- Telescope
     {
         'nvim-telescope/telescope.nvim',
@@ -15,10 +12,14 @@ return {
         'neovim/nvim-lspconfig',
         'jose-elias-alvarez/null-ls.nvim',
         'hrsh7th/cmp-nvim-lsp',
-        'ray-x/lsp_signature.nvim',
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
     },
+    {
+  "ray-x/lsp_signature.nvim",
+  event = "VeryLazy",
+  opts = {},
+},
 
     -- NeoVim Tree
     { "nvim-tree/nvim-tree.lua" },
