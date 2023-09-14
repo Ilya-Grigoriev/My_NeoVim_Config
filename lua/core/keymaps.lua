@@ -54,3 +54,6 @@ vim.keymap.set('n', 'H', 'gT', { noremap = true })
 
 -- Selected all lines
 vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true })
+
+-- Move between files
+vim.keymap.set('n', '<C-b>', '<C-^><CR>', { noremap = true })
