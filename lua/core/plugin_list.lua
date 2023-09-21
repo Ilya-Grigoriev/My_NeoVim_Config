@@ -15,11 +15,13 @@ return {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
     },
+    { "folke/neodev.nvim",      opts = {} },
+
     {
-  "ray-x/lsp_signature.nvim",
-  event = "VeryLazy",
-  opts = {},
-},
+        "ray-x/lsp_signature.nvim",
+        event = "VeryLazy",
+        opts = {},
+    },
 
     -- NeoVim Tree
     { "nvim-tree/nvim-tree.lua" },
