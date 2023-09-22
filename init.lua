@@ -25,6 +25,7 @@ require("plugin_configs/gitsigns")
 require("plugin_configs/snippets")
 require("plugin_configs/harpoon")
 require("plugin_configs/_treesitter")
+require('plugin_configs/which_keymaps')
 
 -- other modules
 require("other_modules/surround_text")
