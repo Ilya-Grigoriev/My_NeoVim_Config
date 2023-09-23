@@ -30,4 +30,8 @@ require('plugin_configs/which_keymaps')
 -- other modules
 require("other_modules/surround_text")
 
-vim.cmd [[ colorscheme gruvbox ]]
+if vim.fn.has('termux') then
+    vim.cmd [[ colorscheme habamax ]]
+else
+    vim.cmd [[ colorscheme gruvbox ]]
+end
