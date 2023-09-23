@@ -1,4 +1,5 @@
 local o = vim.o
+local opt = vim.opt
 
 o.number = true
 
@@ -19,3 +20,9 @@ o.autoindent = true
 o.cursorline = true
 
 o.scrolloff = 5
+
+opt.autoread = true
+opt.autowrite = true
+vim.cmd [[set nohidden]]
+
+opt.showcmd = true
