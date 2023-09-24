@@ -42,3 +42,6 @@ cd nvim
 
 # Java
 - If you're using Java, then go to `ftplugin/java.lua` file and change `{your_username}` to your username in OS.
+
+# LSP
+- To install LSP, enter `:Mason` in nvim and go to `LSP` section.
