@@ -29,8 +29,4 @@ require("plugin_configs/_treesitter")
 -- other modules
 require("other_modules/surround_text")
 
-if vim.fn.has('termux') then
-    vim.cmd [[ colorscheme habamax ]]
-else
-    vim.cmd [[ colorscheme gruvbox ]]
-end
+vim.cmd [[ colorscheme gruvbox ]]
