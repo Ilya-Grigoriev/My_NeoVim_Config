@@ -7,3 +7,5 @@ plugin/
 *.py
 *.json
 *.txt
+*.cpp
+*.java
