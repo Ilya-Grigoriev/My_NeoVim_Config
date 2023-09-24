@@ -41,4 +41,4 @@ cd nvim
 6. All done!
 
 # Java
-- If you're using Java, go to `ftplugin/java.lua` file and renamed `{your_username}` to your username in OS.
+- If you're using Java, then go to `ftplugin/java.lua` file and change `{your_username}` to your username in OS.
