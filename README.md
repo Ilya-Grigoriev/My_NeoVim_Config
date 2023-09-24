@@ -39,3 +39,6 @@ cd nvim
 
 5. Restart NeoVim.
 6. All done!
+
+# Java
+- If you're using Java, go to `ftplugin/java.lua` file and renamed `{your_username}` to your username in OS.
