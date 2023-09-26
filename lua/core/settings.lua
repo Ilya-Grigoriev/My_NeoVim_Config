@@ -22,7 +22,5 @@ o.cursorline = true
 o.scrolloff = 5
 
 opt.autoread = true
-opt.autowrite = true
-vim.cmd [[set nohidden]]
 
 opt.showcmd = true
