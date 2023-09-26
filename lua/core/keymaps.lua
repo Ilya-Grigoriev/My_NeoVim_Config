@@ -17,7 +17,7 @@ vim.keymap.set("n", "<leader>rn",
     { noremap = true, desc = "Rename variable" }
 )
 
-vim.keymap.set('n', '<leader>rf', ':call delete(expand(""))', { desc = "Delete file" })
+vim.keymap.set('n', '<leader>rf', ':call delete(expand(""))<Left><Left><Left>', { desc = "Delete file" })
 
 vim.keymap.set('n', '<leader>ps', ':term python3 %<CR>i', { desc = "Run current Python file" })
 
