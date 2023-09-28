@@ -1,12 +1,6 @@
 vim.g.mapleader = ","
 
 vim.keymap.set('i', 'jk', '<ESC>', { desc = "Exiting from Insert mode to Normal mode" })
-vim.keymap.set("t", '<C-t>', '<C-\\><C-n>',
-    {
-        noremap = true,
-        desc = "Exiting from Terminal mode to Normal mode"
-    }
-)
 
 vim.keymap.set('n', '<leader><Space>', ':nohlsearch<CR>', { desc = "Disable highlightings for searching matches" })
 
@@ -42,4 +36,5 @@ vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true, desc = 'Select all lines'
 
 vim.keymap.set('n', '<C-b>', '<C-^><CR>', { noremap = true, desc = 'Go to previous buffer' })
 
-require('other_modules/keymaps_for_running_file')
+require('other_modules/keymaps/running_file')
+require('other_modules/keymaps/_terminal')
