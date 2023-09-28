@@ -19,8 +19,6 @@ vim.keymap.set("n", "<leader>rn",
 
 vim.keymap.set('n', '<leader>rf', ':call delete(expand(""))<Left><Left><Left>', { desc = "Delete file" })
 
-vim.keymap.set('n', '<leader>ps', ':term python3 %<CR>i', { desc = "Run current Python file" })
-
 vim.keymap.set('n', '<leader>tn', ':tabnew<CR>', { desc = "Create tab" })
 
 vim.keymap.set('n', '<leader>rg', ':Rg ', { desc = "Run Ripgrep" })
@@ -43,3 +41,5 @@ vim.keymap.set('n', 'H', 'gT', { noremap = true, desc = "Move left between tabs"
 vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true, desc = 'Select all lines' })
 
 vim.keymap.set('n', '<C-b>', '<C-^><CR>', { noremap = true, desc = 'Go to previous buffer' })
+
+require('other_modules/keymaps_for_running_file')
