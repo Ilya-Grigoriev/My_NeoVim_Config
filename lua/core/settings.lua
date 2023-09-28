@@ -21,6 +21,8 @@ o.cursorline = true
 
 o.scrolloff = 5
 
+o.swapfile = false
+
 opt.autoread = true
 
 opt.showcmd = true
