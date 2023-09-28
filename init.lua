@@ -17,7 +17,6 @@ require("lsp/lsp_servers")
 require("plugin_configs/telescope")
 require("plugin_configs/neovimtree")
 require("plugin_configs/commenter")
-require("plugin_configs/git")
 require("plugin_configs/webdevicons")
 require('plugin_configs/_neogen')
 require("plugin_configs/gitsigns")
@@ -26,5 +25,6 @@ require("plugin_configs/_treesitter")
 
 -- other modules
 require("other_modules/surround_text")
+require('other_modules/git')
 
 vim.cmd [[ colorscheme gruvbox ]]
