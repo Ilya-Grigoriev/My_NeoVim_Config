@@ -37,22 +37,11 @@ return {
         end
     },
 
-    -- Python Docstring
-    { 'pixelneo/vim-python-docstring' },
-
     -- RipGrep
     "BurntSushi/ripgrep",
 
     -- WebDevIcons
     'nvim-tree/nvim-web-devicons',
-
-    -- Terminal
-    {
-        "akinsho/toggleterm.nvim",
-        config = function()
-            require("toggleterm").setup()
-        end
-    },
 
     -- Git
     {
@@ -61,7 +50,6 @@ return {
             require('gitsigns').setup()
         end
     },
-    { 'kdheepak/lazygit.nvim' },
 
     -- Snippets
     { "L3MON4D3/LuaSnip",             run = "make install_jsregexp" },
@@ -69,9 +57,6 @@ return {
         'rafamadriz/friendly-snippets',
         'saadparwaiz1/cmp_luasnip',
     },
-
-    -- Harpoon
-    { 'ThePrimeagen/harpoon' },
 
     -- Treesitter
     { 'nvim-treesitter/nvim-treesitter' },

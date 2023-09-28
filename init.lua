@@ -19,11 +19,9 @@ require("plugin_configs/neovimtree")
 require("plugin_configs/commenter")
 require("plugin_configs/git")
 require("plugin_configs/webdevicons")
-require("plugin_configs/terminal")
 require('plugin_configs/_neogen')
 require("plugin_configs/gitsigns")
 require("plugin_configs/snippets")
-require("plugin_configs/harpoon")
 require("plugin_configs/_treesitter")
 
 -- other modules
