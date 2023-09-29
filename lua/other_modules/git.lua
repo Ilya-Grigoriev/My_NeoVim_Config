@@ -7,3 +7,8 @@ vim.api.nvim_set_keymap('n', ',gl', ':!git log<CR>', {})
 vim.api.nvim_set_keymap('n', ',gp', ':!git push<CR>', {})
 vim.api.nvim_set_keymap('n', ',gb', ':!git branch<CR>', {})
 vim.api.nvim_set_keymap('n', ',gm', ':!git merge ', {})
+
+vim.keymap.set('n', ',gg', function()
+    vim.cmd("terminal lazygit")
+    vim.cmd.startinsert()
+end, { desc = 'Open lazygit in terminal' })
