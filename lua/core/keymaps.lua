@@ -38,3 +38,4 @@ vim.keymap.set('n', '<C-b>', '<C-^><CR>', { noremap = true, desc = 'Go to previo
 
 require('other_modules/mappings/running_file')
 require('other_modules/mappings/_terminal')
+require('other_modules/mappings/switch_tabs')
