@@ -5,8 +5,7 @@ vim.keymap.set('n', '<C-\\>', function()
 end, { desc = 'Open terminal in new tab' })
 
 vim.keymap.set('n', ',gg', function()
-    vim.cmd.tabnew()
-    vim.cmd.terminal()
+    vim.cmd("terminal lazygit")
     vim.cmd.startinsert()
 end, { desc = 'Open lazygit in terminal' })
 
