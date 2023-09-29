@@ -36,5 +36,5 @@ vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true, desc = 'Select all lines'
 
 vim.keymap.set('n', '<C-b>', '<C-^><CR>', { noremap = true, desc = 'Go to previous buffer' })
 
-require('other_modules/keymaps/running_file')
-require('other_modules/keymaps/_terminal')
+require('other_modules/mappings/running_file')
+require('other_modules/mappings/_terminal')
