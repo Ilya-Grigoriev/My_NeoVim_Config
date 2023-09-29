@@ -27,4 +27,4 @@ require("plugin_configs/_treesitter")
 require("other_modules/surround_text")
 require('other_modules/git')
 
-vim.cmd [[ colorscheme gruvbox ]]
+vim.cmd.colorscheme('gruvbox')
