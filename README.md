@@ -2,7 +2,7 @@
 
 # Config
 
-### This is my NeoVim config, which I will update sometimes.
+- This is my NeoVim config, which I will update sometimes.
 
 # Installation
 
