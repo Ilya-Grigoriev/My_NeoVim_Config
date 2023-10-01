@@ -10,4 +10,4 @@ vim.keymap.set("t", '<C-t>', '<C-\\><C-n>',
         desc = "Exiting from Terminal mode to Normal mode"
     }
 )
-vim.keymap.set('t', '<C-q>', '<C-\\><C-n>:q<CR>', { desc = 'Close terminal' })
+vim.keymap.set('t', '<C-q>', '<C-\\><C-n>:bd!<CR>', { desc = 'Close terminal' })
