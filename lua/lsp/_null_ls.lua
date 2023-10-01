@@ -5,12 +5,15 @@ end
 
 local sources = {
     -- python
-    null_ls.builtins.formatting.black.with({
-        extra_args = { "--line-length=80" }
-    }),
+    null_ls.builtins.formatting.blue,
     null_ls.builtins.formatting.isort,
+
     -- json
     null_ls.builtins.formatting.fixjson,
+
+    -- java
+    null_ls.builtins.formatting.google_java_format,
+
     -- other languages
     null_ls.builtins.formatting.prettier.with({
         filetypes = {
@@ -27,8 +30,6 @@ local sources = {
             "txt",
         },
     }),
-    -- java
-    null_ls.builtins.formatting.google_java_format,
 }
 
 null_ls.setup({ sources = sources })
