@@ -3,6 +3,6 @@ for n_tab = 1, 10, 1 do
         'n',
         string.format('<M-%d>', n_tab),
         string.format('%dgt', n_tab),
-        {}
+        { desc = 'Switch tabs by using Alt+{number}' }
     )
 end
