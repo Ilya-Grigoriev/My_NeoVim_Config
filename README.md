@@ -30,11 +30,11 @@ cd nvim
    - [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/tree/master/cli)
      (recommend installation via `cargo`)
 
-3. Launch NeoVim (just enter "nvim" in console).
+3. Open `init.lua` using nvim.
 4. In NeoVim, start installing the required plugins with by entering the following command:
 
 ```vim
-:PackerSync
+:Lazy
 ```
 
 5. Restart NeoVim.
