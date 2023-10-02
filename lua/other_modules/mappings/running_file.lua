@@ -1,6 +1,6 @@
 local commands_filetypes = {
-    python = ':term python3 %<CR>i',
-    lua = ':term lua %<CR>i',
+    python = ':term python3 %<CR>',
+    lua = ':term lua %<CR>',
 }
 
 for filetype, command_for_run in pairs(commands_filetypes) do
