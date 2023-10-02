@@ -15,7 +15,10 @@ return {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
     },
-    { "folke/neodev.nvim",      opts = {} },
+    {
+        "folke/neodev.nvim",
+        opts = {}
+    },
 
     {
         "ray-x/lsp_signature.nvim",
@@ -52,14 +55,17 @@ return {
     },
 
     -- Snippets
-    { "L3MON4D3/LuaSnip",             run = "make install_jsregexp" },
+    {
+        "L3MON4D3/LuaSnip",
+        run = "make install_jsregexp"
+    },
     {
         'rafamadriz/friendly-snippets',
         'saadparwaiz1/cmp_luasnip',
     },
 
     -- Treesitter
-    { 'nvim-treesitter/nvim-treesitter' },
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", },
 
     -- Fzf
     {
