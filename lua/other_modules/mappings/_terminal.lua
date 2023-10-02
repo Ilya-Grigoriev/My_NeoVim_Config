@@ -1,8 +1,17 @@
 vim.keymap.set('n', '<C-\\>', function()
     vim.cmd.tabnew()
     vim.cmd.terminal()
-    vim.cmd.startinsert()
 end, { desc = 'Open terminal in new tab' })
+
+vim.api.nvim_create_autocmd(
+    { 'BufEnter', 'TermOpen' },
+    {
+        pattern = 'term://*',
+        callback = function(args)
+            vim.cmd.startinsert()
+        end
+    }
+)
 
 vim.keymap.set("t", '<C-t>', '<C-\\><C-n>',
     {
