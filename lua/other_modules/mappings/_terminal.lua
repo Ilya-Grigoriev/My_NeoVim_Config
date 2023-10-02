@@ -7,7 +7,7 @@ vim.api.nvim_create_autocmd(
     { 'BufEnter', 'TermOpen' },
     {
         pattern = 'term://*',
-        callback = function(args)
+        callback = function(_)
             vim.cmd.startinsert()
         end
     }
