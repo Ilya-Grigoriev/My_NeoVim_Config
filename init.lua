@@ -26,5 +26,6 @@ require("plugin_configs/_treesitter")
 -- other modules
 require("other_modules/surround_text")
 require('other_modules/git')
+require('other_modules/_python_venv')
 
 vim.cmd.colorscheme('gruvbox')
