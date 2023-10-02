@@ -3,7 +3,6 @@
 # Config
 
 - This is my NeoVim config, which I will update sometimes.
-
 # Required
 
 - [neovim](https://github.com/neovim/neovim) **`>= 0.8`**
@@ -42,6 +41,7 @@ cd nvim
 
 # Java
 
+- Supposedly, that `eclipse.jdt.ls` is installed in your home folder.
 - If you're using Java, then go to `ftplugin/java.lua` file and change `{your_username}` to your username in OS.
 
 # LSP
