@@ -3,7 +3,7 @@ return {
     {
         'nvim-telescope/telescope.nvim',
         'nvim-lua/plenary.nvim',
-        'sharkdp/fd'
+        'sharkdp/fd',
     },
 
     -- LSP
@@ -39,9 +39,6 @@ return {
             require('Comment').setup()
         end
     },
-
-    -- RipGrep
-    "BurntSushi/ripgrep",
 
     -- WebDevIcons
     'nvim-tree/nvim-web-devicons',
