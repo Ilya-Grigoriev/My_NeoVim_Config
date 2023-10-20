@@ -36,6 +36,8 @@ vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true, desc = 'Select all lines'
 
 vim.keymap.set('n', '<C-b>', '<C-^><CR>', { noremap = true, desc = 'Go to previous buffer' })
 
+vim.keymap.set('n', ',vs', ':vsplit<CR>', { desc = "Split vertical" })
+
 require('other_modules/mappings/running_file')
 require('other_modules/mappings/_terminal')
 require('other_modules/mappings/switch_tabs')
