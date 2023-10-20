@@ -1,6 +1,7 @@
 # Config
 
 - This is my NeoVim config, which I will update sometimes.
+
 # Required
 
 - [neovim](https://github.com/neovim/neovim) **`>= 0.8`**
@@ -49,3 +50,7 @@ cd nvim
 # Python
 
 - To using Python virtualenvs, added interpreter path in `lua/other_modules/_python_venv.lua`. [Read about Python integration in nvim](https://neovim.io/doc/user/provider.html#g%3Apython3_host_prog)
+
+# Presenterm
+
+- Keymaps for [presenterm](https://github.com/mfontanini/presenterm) are located in `lua/other_modules/mappings/\_presenterm.lua' file.
