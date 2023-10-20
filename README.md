@@ -41,7 +41,7 @@ cd nvim
 # Java
 
 - Supposedly, that `eclipse.jdt.ls` is installed in your home folder.
-- If you're using Java, then go to `ftplugin/java.lua` file and change `{your_username}` to your username in OS.
+- If you're using Java, then go to [`ftplugin/java.lua`](https://github.com/ilya-grigoriev/nvim/blob/main/ftplugin/java.lua) file and change `{your_username}` to your username in OS.
 
 # LSP
 
@@ -49,7 +49,7 @@ cd nvim
 
 # Python
 
-- To using Python virtualenvs, added interpreter path in `lua/other_modules/_python_venv.lua`. [Read about Python integration in nvim](https://neovim.io/doc/user/provider.html#g%3Apython3_host_prog)
+- To using Python virtualenvs, added interpreter path in [`lua/other_modules/_python_venv.lua`](https://github.com/ilya-grigoriev/nvim/blob/main/lua/other_modules/_python_venv.lua). [Read about Python integration in nvim](https://neovim.io/doc/user/provider.html#g%3Apython3_host_prog)
 
 # Presenterm
 
