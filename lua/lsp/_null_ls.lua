@@ -9,7 +9,10 @@ local sources = {
     null_ls.builtins.formatting.isort,
     null_ls.builtins.diagnostics.ruff.with(
         {
-            extra_args = { '--select', 'ALL' },
+            extra_args = {
+                '--select=ALL',
+                '--ignore=Q000,ANN101,D101,D100,D103,I001'
+            },
         }
     ),
 
