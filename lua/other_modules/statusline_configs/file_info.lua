@@ -1,7 +1,7 @@
 local M = {}
 
 local function _enable_highlight()
-    vim.cmd('highlight FileInfo guifg=#413543 guibg=#B5CB99')
+    vim.cmd('highlight FileInfo guibg=#393E46')
 end
 
 function M.file_info()
