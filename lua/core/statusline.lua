@@ -1,35 +1,23 @@
 local lsp = require('other_modules/statusline_configs/_lsp')
+local file_info = require('other_modules/statusline_configs/file_info')
+local line_info = require('other_modules/statusline_configs/line_info')
 
-local function lineinfo()
-    if vim.bo.filetype == "alpha" then
-        return ""
-    end
-    return " %P %l:%c "
-end
 
--- luacheck:ignore 111
+
 Statusline = {}
--- luacheck:ignore 112
 Statusline.active = function()
     return table.concat {
-        "%#Normal#",
-        ' ',
-        '%F',
-        ' ',
-        '%m',
-        "%#Normal#",
+        file_info.file_info(),
         '%=',
         lsp.lsp(),
-        lineinfo(),
+        line_info.line_info(),
     }
 end
 
--- luacheck:ignore 112
 function Statusline.inactive()
     return " %F"
 end
 
--- luacheck:ignore 112
 function Statusline.short()
     return "%#StatusLineNC#   NvimTree"
 end
