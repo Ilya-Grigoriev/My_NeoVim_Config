@@ -1,3 +1,4 @@
+# TODO: сделать отключение статуслайн, как при presenterm, чтобы в обе стороны работало (при входе в терминал выключается, при переключении на другую вкладку включается)
 vim.keymap.set('n', '<C-\\>', function()
     vim.cmd.tabnew()
     vim.cmd.terminal()
@@ -15,6 +16,7 @@ vim.api.nvim_create_autocmd(
 
 vim.api.nvim_create_autocmd('TermClose',
     {
+        pattern = 'term://*zsh',
         callback = function()
             vim.cmd('call feedkeys("\\<CR>")')
         end
