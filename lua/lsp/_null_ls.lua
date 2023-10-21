@@ -7,6 +7,11 @@ local sources = {
     -- python
     null_ls.builtins.formatting.blue,
     null_ls.builtins.formatting.isort,
+    null_ls.builtins.diagnostics.ruff.with(
+        {
+            extra_args = { '--select', 'ALL' },
+        }
+    ),
 
     -- json
     null_ls.builtins.formatting.fixjson,
