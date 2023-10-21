@@ -11,7 +11,7 @@ function M.lsp()
     local errors = get_string_format_lsp_severity('E', errors_count)
     local warnings = get_string_format_lsp_severity('W', warnings_count)
     local hints = get_string_format_lsp_severity('H', hints_count)
-    return errors .. warnings .. hints .. "%#Normal#"
+    return errors .. warnings .. hints
 end
 
 function enable_highlightings()
