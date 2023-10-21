@@ -14,6 +14,9 @@ local sources = {
     -- java
     null_ls.builtins.formatting.google_java_format,
 
+    -- latex
+    null_ls.builtins.formatting.latexindent,
+
     -- other languages
     null_ls.builtins.formatting.prettier.with({
         filetypes = {
