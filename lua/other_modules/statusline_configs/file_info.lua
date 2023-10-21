@@ -9,6 +9,7 @@ function M.file_info()
 
     return table.concat({
         "%#FileInfo#",
+        ' ',
         '%F',
         ' ',
         '%m',

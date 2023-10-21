@@ -1,7 +1,7 @@
 local M = {}
 
 local function _enable_highlight()
-    vim.cmd('highlight LineInfo guibg=#4D4D4D')
+    vim.cmd('highlight LineInfo guibg=#182747')
 end
 
 function M.line_info()
