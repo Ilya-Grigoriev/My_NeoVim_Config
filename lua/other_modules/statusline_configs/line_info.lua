@@ -10,7 +10,7 @@ function M.line_info()
     if vim.bo.filetype == "alpha" then
         return ""
     end
-    return "%#LineInfo# %P %l:%c %#LineInfo#"
+    return "%#LineInfo# %P %#LineInfo#"
 end
 
 return M
