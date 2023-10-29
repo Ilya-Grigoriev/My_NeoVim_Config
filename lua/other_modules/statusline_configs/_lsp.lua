@@ -7,17 +7,21 @@ function M.lsp()
     local errors_count = get_lsp_severity_count("Error")
     local warnings_count = get_lsp_severity_count("Warn")
     local hints_count = get_lsp_severity_count("Hint")
+    local info_count = get_lsp_severity_count("Info")
 
     local errors = get_string_format_lsp_severity('E', errors_count)
     local warnings = get_string_format_lsp_severity('W', warnings_count)
     local hints = get_string_format_lsp_severity('H', hints_count)
-    return errors .. warnings .. hints
+    local info = get_string_format_lsp_severity('I', info_count)
+
+    return errors .. warnings .. hints .. info
 end
 
 function enable_highlightings()
     vim.cmd('highlight LspDiagnosticsSignError guibg=#ff6262 guifg=Black gui=bold')
     vim.cmd('highlight LspDiagnosticsSignWarning guibg=#ffb73f guifg=Black gui=bold')
     vim.cmd('highlight LspDiagnosticsSignHints guibg=#a7a1ae guifg=Black gui=bold')
+    vim.cmd('highlight LspDiagnosticsSignInfo guibg=#fcf5ed guifg=Black gui=bold')
 end
 
 -- @param severity string
@@ -49,6 +53,9 @@ function get_string_format_lsp_severity(severity_symbol, severity_count)
         elseif severity_symbol == 'H' then
             string_severity = string.format('%s %s %s ',
                 "%#LspDiagnosticsSignHints#", severity_symbol, severity_count)
+        elseif severity_symbol == 'I' then
+            string_severity = string.format('%s %s %s ',
+                "%#LspDiagnosticsSignInfo#", severity_symbol, severity_count)
         end
     end
 
