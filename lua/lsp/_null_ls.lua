@@ -11,7 +11,7 @@ local sources = {
         {
             extra_args = {
                 '--select=ALL',
-                '--ignore=Q000,ANN101,D101,D100,D103,I001'
+                '--ignore=Q000,ANN101,D101,D100,D103,I001,RUF001,RUF002',
             },
         }
     ),
