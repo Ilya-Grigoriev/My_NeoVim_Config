@@ -2,7 +2,6 @@
 require('core/health')
 require("core/settings")
 require("core/keymaps")
-require("core/statusline")
 require("core/plugins")
 
 -- lsp
@@ -24,8 +23,10 @@ require("plugin_configs/snippets")
 require("plugin_configs/_treesitter")
 
 -- other modules
-require("other_modules/surround_text")
-require('other_modules/git')
+require("other_modules/mappings/surround_text")
+require('other_modules/mappings/git')
 require('other_modules/_python_venv')
+require('other_modules/mappings/_presenterm')
 
+vim.cmd.colorscheme('_statusline')
 vim.cmd.colorscheme('gruvbox')

@@ -1,6 +1,5 @@
-local lsp = require('other_modules/statusline_configs/_lsp')
-local file_info = require('other_modules/statusline_configs/file_info')
-local line_info = require('other_modules/statusline_configs/line_info')
+local lsp = require('statusline/_lsp')
+local file_info = require('statusline/file_info')
 
 Statusline = {}
 Statusline.active = function()
@@ -8,7 +7,6 @@ Statusline.active = function()
         file_info.file_info(),
         '%=',
         lsp.lsp(),
-        -- line_info.line_info(),
     }
 end
 
