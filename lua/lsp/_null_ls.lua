@@ -25,6 +25,9 @@ local sources = {
     -- latex
     null_ls.builtins.formatting.latexindent,
 
+    -- lua
+    null_ls.builtins.diagnostics.luacheck,
+
     -- other languages
     null_ls.builtins.formatting.prettier.with({
         filetypes = {
