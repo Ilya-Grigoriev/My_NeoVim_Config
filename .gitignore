@@ -12,3 +12,4 @@ plugin/
 *.txt
 *.cpp
 *.java
+*.log
