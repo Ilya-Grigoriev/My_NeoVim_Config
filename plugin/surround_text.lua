@@ -8,7 +8,8 @@ local symbols_pairs = {
     ['*'] = '*',
     ['-'] = '-',
     ['#'] = '#',
-    ['%'] = '%'
+    ['%'] = '%',
+    ['`'] = '`',
 }
 local template_lhs = 'yw%s'
 local template_rhs = 'c%s<Esc>pa%s<Esc>'
