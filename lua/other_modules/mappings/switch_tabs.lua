@@ -12,3 +12,6 @@ for n_tab = 1, 10, 1 do
         { desc = 'Switch tabs by using Alt+{number} in terminal' }
     )
 end
+
+vim.keymap.set('n', '<M-h>', ':tabprevious<CR>', { desc = "Switch to previous tab" })
+vim.keymap.set('n', '<M-l>', ':tabnext<CR>', { desc = "Switch to next tab" })
