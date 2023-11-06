@@ -7,7 +7,7 @@ local filename_to_lsp_name = {
     ['lsp/servers/_cpp'] = 'clangd',
     ['lsp/servers/_toml'] = 'taplo',
     ['lsp/servers/_xml'] = 'lemminx',
-    ['lsp/servers/_vim'] = 'vimls',
+    ['lsp/servers/_vim'] = 'vim-language-server',
     ['lsp/servers/_latex'] = 'ltex-ls'
 }
 
