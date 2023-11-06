@@ -38,6 +38,13 @@ cd nvim
 4. Restart nvim.
 5. All done!
 
+# Config structure
+
+- `colors`. This folder for customization file. Require files from [`plugin/set_colors.lua`](https://github.com/ilya-grigoriev/nvim/blob/main/plugin/set_colors.lua)
+- `ftplugin`. This folder for filetype settings. [Read more about folder `ftplugin`](https://neovim.io/doc/user/usr_41.html#write-filetype-plugin).
+- `lua`. This folder for lua plugins.
+- `plugin`. This folder for plugins which are started automatically.
+
 # Java
 
 - Supposedly, that `eclipse.jdt.ls` is installed in your home folder.
@@ -56,4 +63,5 @@ cd nvim
 - Keymaps for [presenterm](https://github.com/mfontanini/presenterm) are located in [`plugin/\_presenterm.lua`](https://github.com/ilya-grigoriev/nvim/blob/main/plugin/_presenterm.lua) file.
 
 # Keymaps
+
 - If you want to check keymaps of this config, just enter `tk`.
