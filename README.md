@@ -44,6 +44,7 @@ cd nvim
 - `ftplugin`. This folder for filetype settings. [Read more about folder `ftplugin`](https://neovim.io/doc/user/usr_41.html#write-filetype-plugin).
 - `lua`. This folder for lua plugins.
 - `plugin`. This folder for plugins which are started automatically.
+- [Read more about folders in nvim config](https://neovim.io/doc/user/options.html#'runtimepath').
 
 # Java
 
