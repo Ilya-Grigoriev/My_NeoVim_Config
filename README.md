@@ -54,3 +54,6 @@ cd nvim
 # Presenterm
 
 - Keymaps for [presenterm](https://github.com/mfontanini/presenterm) are located in [`plugin/\_presenterm.lua`](https://github.com/ilya-grigoriev/nvim/blob/main/plugin/_presenterm.lua) file.
+
+# Keymaps
+- If you want to check keymaps of this config, just enter `tk`.
