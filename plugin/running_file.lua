@@ -10,7 +10,11 @@ for filetype, command_for_run in pairs(commands_filetypes) do
         {
             pattern = filetype,
             callback = function(args)
-                vim.keymap.set('n', ',<CR>', command_for_run, { buffer = args.buf })
+                vim.keymap.set('n', '<CR>', command_for_run,
+                    {
+                        buffer = args.buf,
+                    }
+                )
             end
         }
     )
