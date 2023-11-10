@@ -29,14 +29,7 @@ cd nvim
 ```
 
 2. Open `init.lua` using nvim.
-3. In nvim, start installing plugins with by entering the following command:
-
-```vim
-:Lazy
-```
-
-4. Restart nvim.
-5. All done!
+3. All done!
 
 # Config structure
 
