@@ -19,6 +19,9 @@ local sources = {
     -- json
     null_ls.builtins.formatting.fixjson,
 
+    -- vim
+    null_ls.builtins.diagnostics.vint,
+
     -- java
     null_ls.builtins.formatting.google_java_format,
 
@@ -26,7 +29,14 @@ local sources = {
     null_ls.builtins.formatting.latexindent,
 
     -- lua
-    null_ls.builtins.diagnostics.luacheck,
+    null_ls.builtins.diagnostics.luacheck.with(
+        {
+            -- don't work :(
+            -- extra_args = {
+            -- '--config', env['LUACHECK_CONFIG_PATH']
+            -- },
+        }
+    ),
 
     -- other languages
     null_ls.builtins.formatting.prettier.with({
