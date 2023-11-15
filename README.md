@@ -37,10 +37,11 @@ cd nvim
 - `ftplugin`. This folder for filetype settings. [Read more about folder `ftplugin`](https://neovim.io/doc/user/usr_41.html#write-filetype-plugin).
 - `lua`. This folder for lua plugins.
   - `core`. This folder for certain settings (keymaps, plugin list and etc).
-  - `lsp`. This is folder for LSP, linters, formatters settings. There is folder `servers`, where LSP settings is located.
-  - `plugins`. This is folder for plugin settings.
+  - `lsp`. This folder for LSP, linters, formatters settings. There folder `servers`, where LSP settings is located.
+  - `plugins`. This folder for plugin settings.
   - `statusline`. This is folder for statusline settings.
 - `plugin`. This folder for plugins which are started automatically.
+- `snippets`. This folder for snippets of any languages.
 - [Read more about folders in nvim config](https://neovim.io/doc/user/options.html#'runtimepath').
 
 # Java
