@@ -10,9 +10,9 @@ for filetype, command_for_run in pairs(commands_filetypes) do
         {
             pattern = filetype,
             callback = function(args)
-                filepath = args['file']
                 vim.keymap.set('n', '<CR>',
                     function()
+                        filepath = vim.fn.expand('%')
                         vim.cmd.tabnew()
                         result_command = string.format(command_for_run, filepath)
                         vim.cmd.terminal(result_command)
