@@ -41,4 +41,4 @@ require('gitsigns').setup {
     },
 }
 vim.api.nvim_set_keymap('n', '<S-b>', ':Gitsigns blame_line<CR>', {})
-vim.api.nvim_set_keymap('n', '<C-h>', ':Gitsigns preview_hunk<CR>', {})
+vim.api.nvim_set_keymap('n', '<S-h>', ':Gitsigns preview_hunk<CR>', {})
