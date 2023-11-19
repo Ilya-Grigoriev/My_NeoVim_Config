@@ -5,8 +5,7 @@ for n_tab = 1, 10, 1 do
         string.format('%dgt', n_tab),
         { desc = 'Switch tabs by using Alt+{number}' }
     )
-    vim.keymap.set(
-        't',
+    vim.keymap.set('t',
         string.format('<M-%d>', n_tab),
         string.format('<C-\\><C-n>%dgt', n_tab),
         { desc = 'Switch tabs by using Alt+{number} in terminal' }
@@ -23,3 +22,8 @@ vim.keymap.set('n', '<C-J>', '<C-w>j', { desc = 'Switch to down window' })
 vim.keymap.set('n', '<C-K>', '<C-w>k', { desc = 'Switch to up window' })
 vim.keymap.set('n', '<C-L>', '<C-w>l', { desc = 'Switch to right window' })
 vim.keymap.set('n', '<C-H>', '<C-w>h', { desc = 'Switch to left window' })
+
+vim.keymap.set('t', '<C-J>', '<C-\\><C-n><C-w>j', { desc = 'Switch to down window from terminal' })
+vim.keymap.set('t', '<C-K>', '<C-\\><C-n><C-w>k', { desc = 'Switch to up window from terminal' })
+vim.keymap.set('t', '<C-L>', '<C-\\><C-n><C-w>l', { desc = 'Switch to right window from terminal' })
+vim.keymap.set('t', '<C-H>', '<C-\\><C-n><C-w>h', { desc = 'Switch to left window from terminal' })
