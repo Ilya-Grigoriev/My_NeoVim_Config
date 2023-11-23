@@ -63,6 +63,7 @@ return {
 
     -- Treesitter
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", },
+    { 'nvim-treesitter/playground' },
 
     -- Fzf
     {
@@ -76,9 +77,8 @@ return {
     -- Annotation
     {
         "danymat/neogen",
-        dependencies = "nvim-treesitter/nvim-treesitter",
         config = true,
         -- Uncomment next line if you want to follow only stable versions
-        -- version = "*"
-    }
+        version = "*"
+    },
 }
