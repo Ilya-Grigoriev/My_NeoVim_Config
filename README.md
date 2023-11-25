@@ -64,3 +64,7 @@ cd nvim
 # Keymaps
 
 - If you want to check keymaps of this config, just enter `tk`.
+
+# Inspired by
+- [changemewtf/no_plugins](https://github.com/changemewtf/no_plugins)
+- [jdhao/nvim-config](https://github.com/jdhao/nvim-config)
