@@ -13,7 +13,7 @@ for filetype, command_for_run in pairs(commands_filetypes) do
             pattern = filetype,
             group = running_file,
             callback = function(args)
-                vim.keymap.set('n', '<CR>',
+                vim.keymap.set('n', ',<CR>',
                     function()
                         filepath = vim.fn.expand('%')
                         result_command = string.format(command_for_run, filepath)
