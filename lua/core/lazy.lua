@@ -12,3 +12,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup('core/plugin_list')
+
+vim.keymap.set('n', "'la", ':Lazy<CR>', { desc = 'Open Lazy' })
