@@ -22,6 +22,8 @@ vim.keymap.set('x', '<leader>s', ':s/', { desc = "Substitution in Visual mode" }
 
 vim.keymap.set('n', '<leader>ba', ':%bd<CR>', { desc = "Delete all buffers in nvim" })
 vim.keymap.set('n', '<leader>bf', ':bd ', { desc = "Delete buffer by id" })
+vim.keymap.set('n', ',l', ':ls<CR>', { desc = 'Printing all buffers' })
+vim.keymap.set('n', "'b", ':b ', { desc = 'Find buffer by file name' })
 
 
 vim.keymap.set('v', '<C-y>', '"+y', { noremap = true, desc = "Copy text to clipboard" })
@@ -37,3 +39,5 @@ vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true, desc = 'Select all lines'
 vim.keymap.set('n', '<C-b>', '<C-^><CR>', { noremap = true, desc = 'Go to previous buffer' })
 
 vim.keymap.set('n', ',vs', ':vsplit<CR>', { desc = "Split vertical" })
+
+vim.keymap.set('n', "'f", ':find ', { desc = 'Find files' })
