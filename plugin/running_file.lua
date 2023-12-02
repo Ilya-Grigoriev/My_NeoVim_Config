@@ -1,4 +1,4 @@
-local running_file = vim.api.nvim_create_augroup('RunningFIle', { clear = true })
+local running_file = vim.api.nvim_create_augroup('RunningFile', { clear = true })
 
 local commands_filetypes = {
     python = 'python %s',
@@ -12,6 +12,7 @@ for filetype, command_for_run in pairs(commands_filetypes) do
         {
             pattern = filetype,
             group = running_file,
+            desc = "Running file",
             callback = function(args)
                 vim.keymap.set('n', ',<CR>',
                     function()
