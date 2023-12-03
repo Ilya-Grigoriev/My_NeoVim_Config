@@ -1,14 +1,3 @@
-local presenterm = vim.api.nvim_create_augroup("Presenterm", { clear = true })
-
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "markdown",
-    group = presenterm,
-    callback = function(args)
-        vim.keymap.set('n', ',ps', ':vsplit | term presenterm %<CR>', { desc = "Run presenterm", buffer = args.buf })
-        vim.keymap.set('n', ',pf', ':term presenterm -e %<CR>', { desc = 'Export current markdown file to pdf' })
-    end,
-})
-
 vim.api.nvim_create_autocmd(
     { 'TermOpen' },
     {
@@ -42,3 +31,4 @@ vim.api.nvim_create_autocmd(
         end
     }
 )
+

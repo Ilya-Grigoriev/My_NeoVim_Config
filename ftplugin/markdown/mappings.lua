@@ -1,5 +1,3 @@
-local markdown = vim.api.nvim_create_augroup('MarkdownFileSettings', { clear = true })
-
 local types_convert = {
     ['1'] = 'pdf',
     ['2'] = 'latex',
@@ -56,19 +54,13 @@ local function _open_md()
     vim.cmd [[call feedkeys("\<Esc>")]]
 end
 
-vim.api.nvim_create_autocmd('FileType',
-    {
-        pattern = 'markdown',
-        group = markdown,
-        desc = 'Convert Markdown file to PDF and open Markdown in PDF',
-        callback = function(args)
-            vim.keymap.set('n', ',mc',
-                _convert_md, { desc = 'Export markdown to PDF/LaTeX' }
-            )
-            vim.keymap.set('n', ',mo',
-                _open_md,
-                { desc = "Open Markdown in PDF (PDF file must be)" }
-            )
-        end
-    }
+vim.keymap.set('n', ',mc',
+    _convert_md, { buffer = 0, desc = 'Export markdown to PDF/LaTeX' }
 )
+vim.keymap.set('n', ',mo',
+    _open_md,
+    { buffer = 0, desc = "Open Markdown in PDF (PDF file must be)" }
+)
+
+vim.keymap.set('n', ',ps', ':vsplit | term presenterm %<CR>', { buffer = 0, desc = "Run presenterm" })
+vim.keymap.set('n', ',pf', ':term presenterm -e %<CR>', { buffer = 0, desc = 'Export current markdown file to pdf' })
