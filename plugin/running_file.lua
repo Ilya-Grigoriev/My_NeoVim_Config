@@ -21,7 +21,7 @@ for filetype, command_for_run in pairs(commands_filetypes) do
 
                         vim.cmd.split()
                         vim.cmd.terminal(result_command)
-                    end, { desc = string.format('Run %s file', filetype) }
+                    end, { buffer = 0, desc = string.format('Run %s file', filetype) }
                 )
             end
         }
