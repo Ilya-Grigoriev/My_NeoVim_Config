@@ -7,6 +7,7 @@ require('nvim-treesitter.configs').setup {
         "query",
         'python',
         'markdown',
+        'markdown_inline'
     },
 
     sync_install = false,
