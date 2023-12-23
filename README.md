@@ -2,7 +2,7 @@
 
 - This is my NeoVim config, which I will update sometimes.
 
-# Required
+# Components
 
 - [neovim](https://github.com/neovim/neovim) **`>= 0.8`**
 - [ctags](https://github.com/universal-ctags/ctags)
@@ -16,6 +16,9 @@
 - [jdtls](https://github.com/eclipse/eclipse.jdt.ls) (for using LSP for
   java)
 - [pre-commit](https://github.com/pre-commit/pre-commit)
+- [zathura](https://wiki.archlinux.org/title/Zathura)
+- [mupdf](https://wiki.archlinux.org/title/MuPDF)
+- [presenterm](https://github.com/mfontanini/presenterm)
 - [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/tree/master/cli)
   (recommend installation via `cargo`)
 
@@ -66,5 +69,6 @@ cd nvim
 - If you want to check keymaps of this config, just enter `tk`.
 
 # Inspired by
+
 - [changemewtf/no_plugins](https://github.com/changemewtf/no_plugins)
 - [jdhao/nvim-config](https://github.com/jdhao/nvim-config)
