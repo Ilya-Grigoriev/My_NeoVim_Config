@@ -32,7 +32,6 @@ local function _convert_md()
 
     if number_convert == '3' then
         command_export = 'pandoc --pdf-engine=xelatex %s -t %s -o %s'
-        print("Hello")
     else
         command_export = 'pandoc --pdf-engine=xelatex %s -t %s -o %s'
     end
