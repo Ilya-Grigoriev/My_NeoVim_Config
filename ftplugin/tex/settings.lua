@@ -3,4 +3,4 @@ vim.cmd [[
     filetype on
     syntax on
     let g:tex_flavor = 'latex'
-    ]]
+]]
