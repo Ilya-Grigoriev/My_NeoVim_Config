@@ -45,7 +45,7 @@ cd nvim
 
 # Java
 
-- Supposedly, that [`eclipse.jdt.ls`](https://github.com/eclipse-jdtls/eclipse.jdt.ls) is installed in your home folder.
+- Supposedly, that [eclipse.jdt.ls](https://github.com/eclipse-jdtls/eclipse.jdt.ls) is installed in your home folder.
 - If you're using Java, then go to [`ftplugin/java.lua`](https://github.com/ilya-grigoriev/nvim/blob/main/ftplugin/java.lua) file and change `{your_username}` to your username in OS.
 
 # LSP
