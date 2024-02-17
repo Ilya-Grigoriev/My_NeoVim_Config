@@ -6,6 +6,7 @@
 .ruff_cache/
 .pytest_cache/
 __pycache__/
+latex.out/
 
 *.py
 *.json
@@ -13,3 +14,4 @@ __pycache__/
 *.cpp
 *.java
 *.log
+test.*
