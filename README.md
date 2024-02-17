@@ -1,7 +1,3 @@
-# Config
-
-- This is my NeoVim config, which I will update sometimes.
-
 # Components
 
 - [neovim](https://github.com/neovim/neovim) **`>= 0.8`**
@@ -38,7 +34,7 @@ cd nvim
 
 - `after/plugin`. This folder for plugin settings.
 - `colors`. This folder for customization file. Require files from [`plugin/set_colors.lua`](https://github.com/ilya-grigoriev/nvim/blob/main/plugin/set_colors.lua)
-- `ftplugin`. This folder for filetype settings. [Read more about folder `ftplugin`](https://neovim.io/doc/user/usr_41.html#write-filetype-plugin).
+- `ftplugin`. This folder for filetype settings.
 - `lua`. This folder for lua plugins.
   - `core`. This folder for certain settings (keymaps, plugin list and etc).
   - `lsp`. This folder for LSP, linters, formatters settings. There folder `servers`, where LSP settings is located.
@@ -49,7 +45,7 @@ cd nvim
 
 # Java
 
-- Supposedly, that `eclipse.jdt.ls` is installed in your home folder.
+- Supposedly, that [`eclipse.jdt.ls`](https://github.com/eclipse-jdtls/eclipse.jdt.ls) is installed in your home folder.
 - If you're using Java, then go to [`ftplugin/java.lua`](https://github.com/ilya-grigoriev/nvim/blob/main/ftplugin/java.lua) file and change `{your_username}` to your username in OS.
 
 # LSP
