@@ -2,13 +2,15 @@ local types_convert = {
     ['1'] = 'pdf',
     ['2'] = 'latex',
     ['3'] = 'beamer',
+    ['4'] = 'rmarkdown',
 }
 
 
 ---@return number
 local function _ask_converting_type()
     local type_convert
-    local prompt = 'Convert to (enter number): \n 1: PDF\n 2: LaTeX\n 3: Presentation (beamer)\n Your choice: '
+    local prompt =
+    'Convert to (enter number): \n 1: PDF\n 2: LaTeX\n 3: Presentation (beamer)\n 4: RMarkdown\n Your choice: '
 
     vim.ui.input(
         {
@@ -24,19 +26,24 @@ end
 local function _convert_md()
     local number_convert = _ask_converting_type()
 
-    if number_convert ~= '1' and number_convert ~= '2' and number_convert ~= '3' then
+    if number_convert ~= '1' and number_convert ~= '2' and number_convert ~= '3' and number_convert ~= '4' then
         error('Incorrect choice')
     end
 
     type_convert = types_convert[number_convert]
+    from_filename = vim.fn.expand('%')
 
     if number_convert == '3' then
         command_export = 'pandoc --pdf-engine=xelatex %s -t %s -o %s'
+    elseif number_convert == '4' then
+        vim.cmd.terminal [[
+        echo "require(rmarkdown); render('%');" | R --vanilla
+        ]]
+        return
     else
         command_export = 'pandoc --pdf-engine=xelatex %s -t %s -o %s'
     end
 
-    from_filename = vim.fn.expand('%')
 
     filename_without_extension = vim.fn.expand('%:r')
 
