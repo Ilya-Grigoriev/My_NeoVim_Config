@@ -3,6 +3,8 @@ vim.g.nvim_tree_width = 25
 vim.g.nvim_tree_auto_close = 1
 vim.g.nvim_tree_indent_markers = 1
 
+vim.opt.termguicolors = true
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -12,13 +14,5 @@ vim.g.loaded_netrwPlugin = 1
 -- vim.g.netrw_altv = 1
 -- vim.g.netrw_liststyle = 3
 
-vim.opt.termguicolors = true
 
-require("nvim-tree").setup({
-    sort_by = "case_sensitive",
-    renderer = {
-        group_empty = true,
-    }
-})
-
-vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', {})
+vim.keymap.set('n', '<C-n>', ':CHADopen<CR>', {})

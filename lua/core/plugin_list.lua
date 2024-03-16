@@ -29,6 +29,9 @@ return {
     -- NeoVim Tree
     { "nvim-tree/nvim-tree.lua" },
 
+    -- ChadTree
+    { "ms-jpq/chadtree" },
+
     -- Themes
     { 'morhetz/gruvbox' },
 
@@ -81,4 +84,5 @@ return {
         -- Uncomment next line if you want to follow only stable versions
         version = "*"
     },
+
 }
