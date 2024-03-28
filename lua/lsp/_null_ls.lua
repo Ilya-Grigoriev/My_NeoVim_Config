@@ -37,6 +37,7 @@ local sources = {
             -- },
         }
     ),
+    null_ls.builtins.formatting.stylua,
 
     -- other languages
     null_ls.builtins.formatting.prettier.with({
