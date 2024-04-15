@@ -34,6 +34,7 @@ return {
 
     -- Themes
     { 'morhetz/gruvbox' },
+    {"rebelot/kanagawa.nvim"},
 
     -- Commenter
     {

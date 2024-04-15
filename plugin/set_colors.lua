@@ -1,2 +1,2 @@
 vim.cmd.colorscheme('_statusline')
-vim.cmd.colorscheme('gruvbox')
+vim.cmd.colorscheme('kanagawa-dragon')
