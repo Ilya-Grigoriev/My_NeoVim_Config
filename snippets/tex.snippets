@@ -21,14 +21,17 @@ snippet fg "Create figure"
 		\caption{${1}}
 	\end{figure}
 
-snippet tb "Create table"
+snippet tbl "Create table"
 	\begin{table}
 		${2}
 		\caption{${1}}
 	\end{table}
 
-snippet tt "Create ttfamily}
+snippet tt "Create ttfamily"
 	\texttt{${1}}
+
+snippet tb "Create bold text"
+	\textbf{${1}}
 
 snippet list "Create list"
 	\begin{itemize}
@@ -52,5 +55,20 @@ snippet img "Add image"
 snippet cos "Cosinus"
 	\cos{${1}\}
 
-snippet sin "sinus"
+snippet sin "Sinus"
 	\sin{${1}\}
+
+snippet gat "Create gather block"
+	\begin{gather*}
+		${1}
+	\end{gather*}
+
+snippet ali "Create align block"
+	\begin{align*}
+		${1}
+	\end{align*}
+
+snippet cas "Create cases block"
+	\begin{cases}
+		${1}
+	\end{cases}
