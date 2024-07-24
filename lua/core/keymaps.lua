@@ -36,8 +36,10 @@ vim.keymap.set('n', 'H', 'gT', { noremap = true, desc = "Move left between tabs"
 
 vim.keymap.set('n', '<C-a>', 'ggVG', { noremap = true, desc = 'Select all lines' })
 
-vim.keymap.set('n', '<C-b>', '<C-^><CR>', { noremap = true, desc = 'Go to previous buffer' })
+vim.keymap.set('n', 'gb', '<C-^><CR>', { noremap = true, desc = 'Go to previous buffer' })
 
 vim.keymap.set('n', ',vs', ':vsplit<CR>', { desc = "Split vertical" })
 
 vim.keymap.set('n', "'f", ':find ', { desc = 'Find files' })
+
+vim.keymap.set('n', "<C-n>", ':Ntree<CR>', {})
