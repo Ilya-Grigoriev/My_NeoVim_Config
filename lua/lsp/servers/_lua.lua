@@ -1,9 +1,5 @@
 local lspconfig = require('lspconfig')
 
-require("neodev").setup({
-    -- add any options here, or leave empty to use the default settings
-})
-
 lspconfig.lua_ls.setup {
     on_init = function(client)
         local path = client.workspace_folders[1].name
